@@ -1,6 +1,6 @@
 #! /usr/bin/python
 #
-# Nagios Plugin to check CPU usage.
+# Nagios Plugin to check CPU usage per core
 #
 # This program is free software: and released under the terms of the
 # GNU General Public License as published by the
