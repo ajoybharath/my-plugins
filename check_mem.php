@@ -1,4 +1,5 @@
-  
+# PHP script 
+#   PNP Template for check_mem.pl  
 
 
 <!DOCTYPE html>
