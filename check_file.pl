@@ -1,6 +1,9 @@
 #!/usr/bin/perl
 #
 # Nagios Plugin to monitor changes in files
+# 
+# This script uses file stats and diff command to
+# find whether the file is modified/changed  
 #
 # This program is free software: and released under the terms of the
 # GNU General Public License as published by the
@@ -40,6 +43,7 @@ GetOptions (
 sub print_help () {
         print "Usage: $0 [-h | --help][-f | --file filename] [-s | --seek filename] -c | --critical\n";
         print "Thresholds are expressed in minutes.\n";
+        print "Copyleft (c) 2017 Ajoy Bharath\n";
         exit $ERRORS{'UNKNOWN'};
 }
 
