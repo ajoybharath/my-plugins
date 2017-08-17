@@ -13,7 +13,7 @@
 #  This program is distributed in the hope that it will be useful,
 #  but WITHOUT ANY WARRANTY; without even the implied warranty of
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#  GNU General Public License for more details.
+#  GNU General Public License for more details
 #
 #  Please refer <http://www.gnu.org/licenses/>.
 # ----------------------------------------------------------------------------
@@ -120,7 +120,7 @@ sub my_exit {
 sub print_help {
     print <<EOH;
 Plugin: $prog $version
-Copyleft (c) 2013 Ajoy Bharath
+Copyleft (c) 2017 Ajoy Bharath
 
 This plugin checks the /proc/mounts and alerts for any read only filesystem.
 
