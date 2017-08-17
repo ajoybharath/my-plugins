@@ -56,6 +56,7 @@ if ($opts{h} || (!$opts{w} || !$opts{c})) {
     print " -v: Print the program version\n";
     print " -w <int>: Warning value (number of SYN_RECV)\n";
     print " -c <int>: Critical value (number of SYN_RECV)\n";
+    print "Copyleft (c) 2017 Ajoy Bharath\n";
     exit (-1);
 }
 
@@ -77,7 +78,6 @@ system("$netstat > /tmp/check_attack.res") == 0
 
 my $ddos = `grep SYN_RECV /tmp/check_attack.res | wc -l`;
 chomp $ddos;
-# my $output = `grep SYN_RECV /tmp/check_attack.res | awk {'print \$5'} | cut -f 1 -d ":" | sort | uniq -c | sort -rn | head -10`;
 my $output = `grep SYN_RECV /tmp/check_attack.res | awk {'print \$5'} | cut -f 1 -d ":" | sort | uniq -c | sort -k1,1rn | head -10`;
 
 if ($ddos >= $warning) {
