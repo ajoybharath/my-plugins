@@ -52,6 +52,7 @@ if ($opts{h}) {
     print "usage: ", $program_name,"\n";
     print " -h: Print the command line help\n";
     print " -v: Print the program version\n";
+    print "Copyleft (c) 2017 Ajoy Bharath\n";
     exit (-1);
 }
 
